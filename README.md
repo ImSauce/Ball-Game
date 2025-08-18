@@ -1,5 +1,5 @@
 ## Description
-A simple Ball Game made in unity made by me who has 7 days of unity experience. The goal of the game is to complete each level by collecting all the collectible green cubes floating around the map.
+A simple Ball Game made in unity made by me who has few weeks of unity experience. The goal of the game is to complete each level by collecting all the collectible green cubes floating around the map.
 
 
 ## Screenshots
