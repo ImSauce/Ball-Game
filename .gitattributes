@@ -3,3 +3,9 @@
 *.shader linguist-detectable=false
 *.cginc linguist-detectable=false
 *.html linguist-detectable=false
+# Ignore Unity auto-generated project/solution files
+*.csproj linguist-vendored
+*.sln linguist-vendored
+*.unityproj linguist-vendored
+*.unitypackage linguist-vendored
+*.meta linguist-vendored
