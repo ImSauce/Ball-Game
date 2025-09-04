@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public Text winText;
+    //public Text winText;
     public Text countText;
     AudioManager audioManager;
     public GameObject LevelComplete;
