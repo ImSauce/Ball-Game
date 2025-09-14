@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip collect;
     public AudioClip win;
     public AudioClip collide;
+    public AudioClip lose;
 
 
     private void Start()

@@ -42,12 +42,15 @@ public class PlayerController : MonoBehaviour
         {
             gameManager.OnPlayerCollision(collision);
         }
-        
+
         if (collision.gameObject.CompareTag("quit"))
         {
             SceneManager.LoadScene("Main Menu");
         }
     }
+    
+
+    
 
 
 }
