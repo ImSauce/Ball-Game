@@ -68,7 +68,6 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
 
         gameOverPanel.SetActive(true);
-        Invoke("Restart", 2f);
         audioManager.PlaySFX(audioManager.lose);
         // same: trigger animations here
     }
@@ -101,10 +100,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
 
     public void LoadNextLevel()
     {
