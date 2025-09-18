@@ -9,6 +9,8 @@ TagManager:
   - Audio
   - Wall
   - quit
+  - MusicSlider
+  - SFXSlider
   layers:
   - Default
   - TransparentFX
