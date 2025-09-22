@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject winPanel;
     public GameObject gameOverPanel;
+    public GameObject collectpopup;
+    public Transform popupParent; 
 
     public GameObject fireworks;
     public Text countText;
@@ -35,7 +38,17 @@ public class GameManager : MonoBehaviour
         if (isGameOver) return;  // ignore if already ended
         count++;
         SetCountText();
+        // create a new popup each time
+        GameObject popupInstance = Instantiate(collectpopup, popupParent.transform);
         audioManager.PlaySFX(audioManager.collect);
+
+        StartCoroutine(HidePopupAfterDelay(popupInstance));
+    }
+
+    private IEnumerator HidePopupAfterDelay(GameObject popup)
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(popup);
     }
 
     private void SetCountText()
